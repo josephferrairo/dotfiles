@@ -5,12 +5,10 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'tpope/vim-fugitive'
 Plugin 'git://github.com/tpope/vim-rails.git'
 Plugin 'git://git.wincent.com/command-t.git'
@@ -24,7 +22,6 @@ Plugin 'vim-airline/vim-airline-themes'
 let g:airline_theme = 'gruvbox'
 set laststatus=2
 Plugin 'git@github.com:ctrlpvim/ctrlp.vim.git'
-
 Plugin 'git://github.com/airblade/vim-gitgutter.git'
 
 Plugin 'ntpeters/vim-better-whitespace'
