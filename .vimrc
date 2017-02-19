@@ -50,7 +50,8 @@ set t_Co=256
 :set hlsearch
 " ignore case when searching
 :set ignorecase
-
+" underline current line
+:set cursorline
 " ================ Indentation ======================
 
 set autoindent
