@@ -36,6 +36,10 @@ let NERDTreeShowHidden=1
 Plugin 'git@github.com:vim-ruby/vim-ruby.git'
 Plugin 'git@github.com:ervandew/supertab.git'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'git://github.com/tpope/vim-endwise.git'
+Plugin 'git@github.com:Raimondi/delimitMate.git'
+
+"Current syntax is gruvbox
 Plugin 'morhetz/gruvbox'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
