@@ -34,6 +34,7 @@ map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
 Plugin 'git@github.com:vim-ruby/vim-ruby.git'
+Plugin 'igit@github.com:tpope/vim-haml.git'
 Plugin 'git@github.com:ervandew/supertab.git'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'git://github.com/tpope/vim-endwise.git'
