@@ -22,6 +22,7 @@ Plugin 'vim-airline/vim-airline-themes'
 let g:airline_theme = 'gruvbox'
 set laststatus=2
 Plugin 'git@github.com:ctrlpvim/ctrlp.vim.git'
+Plugin 'git@github.com:rking/ag.vim.git'
 Plugin 'git://github.com/airblade/vim-gitgutter.git'
 
 Plugin 'ntpeters/vim-better-whitespace'
@@ -57,6 +58,7 @@ set t_Co=256
 :set ignorecase
 " underline current line
 :set cursorline
+:hi cursorlinenr gui=underline cterm=underline
 " ================ Indentation ======================
 
 set autoindent
