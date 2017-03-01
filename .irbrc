@@ -24,6 +24,6 @@ begin
   require "pry"
   Pry.start
   exit
-rescue LoadError => e
+rescue LoadError => err
   warn "=> Unable to load pry"
 end

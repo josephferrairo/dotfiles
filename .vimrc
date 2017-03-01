@@ -58,6 +58,8 @@ set t_Co=256
 " underline current line
 :set cursorline
 :hi cursorlinenr gui=underline cterm=underline
+" Can Copy and Paste from system clipboard
+set clipboard=unnamed
 " ================ Indentation ======================
 
 set autoindent
