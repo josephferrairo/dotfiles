@@ -51,6 +51,7 @@ set t_Co=256
 :syntax on
 " numbers on
 :set number
+:set relativenumber
 " highlight search results
 :set hlsearch
 " ignore case when searching
