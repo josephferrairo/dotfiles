@@ -5,6 +5,8 @@
 export ZSH=/Users/joeferrairo/.oh-my-zsh
 source /Users/joeferrairo/aliases
 export PATH=/usr/local/sbin:$PATH
+export PATH=$PATH:/Users/joeferrairo/Desktop/Code/wa-devenv/kubernetes
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -52,7 +54,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails ruby)
+plugins=(git rails ruby bundler)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -92,9 +94,7 @@ eval "$(rbenv init -)"
   source '/Users/joeferrairo/google-cloud-sdk/completion.zsh.inc'
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f /Users/joeferrairo/Downloads/google-cloud-sdk/path.zsh.inc ]; then
-  source '/Users/joeferrairo/Downloads/google-cloud-sdk/path.zsh.inc'
+if [ -f '/Users/joeferrairo/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/joeferrairo/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f /Users/joeferrairo/Downloads/google-cloud-sdk/completion.zsh.inc ]; then
-  source '/Users/joeferrairo/Downloads/google-cloud-sdk/completion.zsh.inc'
+if [ -f '/Users/joeferrairo/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/joeferrairo/google-cloud-sdk/completion.zsh.inc'; fi
