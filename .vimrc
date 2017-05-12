@@ -34,12 +34,16 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'https://github.com/tpope/vim-endwise.git'
 Plug 'https://github.com/Raimondi/delimitMate.git'
 Plug 'https://github.com/pangloss/vim-javascript.git'
+Plug 'https://github.com/janko-m/vim-test.git'
+Plug 'https://github.com/kien/ctrlp.vim.git'
+let g:sql_type_default = "sqlserver"
 "Current syntax is gruvbox
 Plug 'https://github.com/morhetz/gruvbox.git'
 " All of your Plugins must be added before the following line
 call plug#end()
 filetype plugin indent on    " required
 colorscheme gruvbox
+set background=dark    " Setting dark mode
 set t_Co=256
 " syntax on
 :syntax on
