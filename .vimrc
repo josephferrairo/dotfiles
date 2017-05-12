@@ -5,22 +5,20 @@ filetype off                  " required
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
-Plug 'tpope/vim-fugitive'
-Plug 'git://github.com/tpope/vim-rails.git'
-Plug 'git://git.wincent.com/command-t.git'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'https://github.com/tpope/vim-rails.git'
+Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
 Plug 'https://github.com/vim-syntastic/syntastic.git'
-Plug 'git://github.com/nathanaelkane/vim-indent-guides.git'
+Plug 'https://github.com/nathanaelkane/vim-indent-guides.git'
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plug 'ascenator/L9', {'name': 'newL9'}
-Plug 'git@github.com:vim-airline/vim-airline.git'
+Plug 'https://github.com/vim-airline/vim-airline.git'
 Plug 'vim-airline/vim-airline-themes'
-let g:airline_theme = 'gruvbox'
 set laststatus=2
-Plug 'git@github.com:ctrlpvim/ctrlp.vim.git'
-Plug 'git@github.com:rking/ag.vim.git'
-Plug 'git@github.com:airblade/vim-gitgutter.git'
-Plug 'ntpeters/vim-better-whitespace'
+Plug 'https://github.com/kien/ctrlp.vim.git'
+Plug 'https://github.com/rking/ag.vim.git'
+Plug 'https://github.com/mhinz/vim-signify.git'
+Plug 'https://github.com/ntpeters/vim-better-whitespace.git'
 autocmd BufEnter * EnableStripWhitespaceOnSave
 
 Plug 'https://github.com/scrooloose/nerdtree.git'
@@ -29,15 +27,15 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
-Plug 'git@github.com:vim-ruby/vim-ruby.git'
-Plug 'git@github.com:tpope/vim-haml.git'
-Plug 'git@github.com:ervandew/supertab.git'
+Plug 'https://github.com/vim-ruby/vim-ruby.git'
+Plug 'https://github.com/tpope/vim-haml.git'
+Plug 'https://github.com/ervandew/supertab.git'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'git://github.com/tpope/vim-endwise.git'
-Plug 'git@github.com:Raimondi/delimitMate.git'
-
+Plug 'https://github.com/tpope/vim-endwise.git'
+Plug 'https://github.com/Raimondi/delimitMate.git'
+Plug 'https://github.com/pangloss/vim-javascript.git'
 "Current syntax is gruvbox
-Plug 'morhetz/gruvbox'
+Plug 'https://github.com/morhetz/gruvbox.git'
 " All of your Plugins must be added before the following line
 call plug#end()
 filetype plugin indent on    " required
