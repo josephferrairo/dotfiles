@@ -42,8 +42,10 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'https://github.com/tpope/vim-endwise.git'
 Plug 'https://github.com/Raimondi/delimitMate.git'
 Plug 'https://github.com/pangloss/vim-javascript.git'
+Plug 'https://github.com/isRuslan/vim-es6.git'
 Plug 'https://github.com/janko-m/vim-test.git'
 Plug 'https://github.com/kien/ctrlp.vim.git'
+Plug 'https://github.com/sheerun/vim-polyglot.git'
 let g:sql_type_default = "sqlserver"
 "Current syntax is gruvbox
 Plug 'https://github.com/morhetz/gruvbox.git'
@@ -55,6 +57,7 @@ set background=dark    " Setting dark mode
 set t_Co=256
 " syntax on
 :syntax on
+:syntax enable
 " numbers on
 :set number
 :set relativenumber

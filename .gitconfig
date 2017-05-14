@@ -4,7 +4,7 @@
   name = Joseph Ferrairo
   email = josephferrairo@gmail.com
 [core]
-  editor = vim
+  editor = nvim
 [apply]
   whitespace = nowarn
 [push]
