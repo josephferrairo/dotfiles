@@ -9,12 +9,19 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/tpope/vim-rails.git'
 Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
 Plug 'https://github.com/vim-syntastic/syntastic.git'
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_loc_list_height=5
 Plug 'https://github.com/nathanaelkane/vim-indent-guides.git'
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plug 'ascenator/L9', {'name': 'newL9'}
 Plug 'https://github.com/vim-airline/vim-airline.git'
 Plug 'vim-airline/vim-airline-themes'
-let g:airline_theme='wombat'
 set laststatus=2
 Plug 'https://github.com/kien/ctrlp.vim.git'
 Plug 'https://github.com/rking/ag.vim.git'
