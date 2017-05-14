@@ -14,6 +14,7 @@ Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plug 'ascenator/L9', {'name': 'newL9'}
 Plug 'https://github.com/vim-airline/vim-airline.git'
 Plug 'vim-airline/vim-airline-themes'
+let g:airline_theme='wombat'
 set laststatus=2
 Plug 'https://github.com/kien/ctrlp.vim.git'
 Plug 'https://github.com/rking/ag.vim.git'
@@ -78,4 +79,5 @@ filetype indent on
 " default syntax is ruby
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
-"
+"NeoVim true color on
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
