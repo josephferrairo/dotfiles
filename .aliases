@@ -1,0 +1,13 @@
+alias asputil='cd ~/desktop/Code/Asp-Environment-utilities/bin'
+
+alias checkports='sudo lsof -i | grep LISTEN'
+
+alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+
+alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+
+alias resquestart="bundle exec rake resque:work VERBOSE=1 QUEUE='*' --trace"
+
+alias ls='command ls -AG'
+
+alias vim='nvim'

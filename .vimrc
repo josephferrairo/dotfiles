@@ -53,7 +53,7 @@ Plug 'https://github.com/morhetz/gruvbox.git'
 call plug#end()
 filetype plugin indent on    " required
 colorscheme gruvbox
-set background=dark    " Setting dark mode
+set background=dark " Setting dark mode
 set t_Co=256
 " syntax on
 :syntax on

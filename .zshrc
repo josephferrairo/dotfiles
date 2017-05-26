@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/joeferrairo/.oh-my-zsh
-source /Users/joeferrairo/aliases
+source /Users/joeferrairo/.aliases
 export PATH=/usr/local/sbin:$PATH
 export PATH=$PATH:/Users/joeferrairo/Desktop/Code/wa-devenv/kubernetes
 
