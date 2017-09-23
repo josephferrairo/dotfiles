@@ -8,15 +8,17 @@ call plug#begin('~/.vim/plugged')
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/tpope/vim-rails.git'
 Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
-Plug 'https://github.com/vim-syntastic/syntastic.git'
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_loc_list_height=5
+"Plug 'https://github.com/vim-syntastic/syntastic.git'
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_loc_list_height=5
+"
 Plug 'https://github.com/nathanaelkane/vim-indent-guides.git'
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plug 'ascenator/L9', {'name': 'newL9'}
@@ -46,6 +48,20 @@ Plug 'https://github.com/isRuslan/vim-es6.git'
 Plug 'https://github.com/janko-m/vim-test.git'
 Plug 'https://github.com/kien/ctrlp.vim.git'
 Plug 'https://github.com/sheerun/vim-polyglot.git'
+Plug 'alvan/vim-closetag'
+
+" vim-jsx stuff
+Plug 'https://github.com/mxw/vim-jsx.git'
+let g:javascript_plugin_flow = 1
+let g:jsx_ext_required = 0
+
+" JS Linting
+Plug 'https://github.com/w0rp/ale.git'
+let g:airline#extensions#ale#enabled = 1
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+
 let g:sql_type_default = "sqlserver"
 "Current syntax is gruvbox
 Plug 'https://github.com/morhetz/gruvbox.git'
@@ -53,7 +69,7 @@ Plug 'https://github.com/morhetz/gruvbox.git'
 call plug#end()
 filetype plugin indent on    " required
 colorscheme gruvbox
-set background=dark " Setting dark mode
+set background=dark" Setting dark mode
 set t_Co=256
 " syntax on
 :syntax on

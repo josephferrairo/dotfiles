@@ -6,6 +6,7 @@ export ZSH=/Users/joeferrairo/.oh-my-zsh
 source /Users/joeferrairo/.aliases
 export PATH=/usr/local/sbin:$PATH
 export PATH=$PATH:/Users/joeferrairo/Desktop/Code/wa-devenv/kubernetes
+bindkey -v
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
