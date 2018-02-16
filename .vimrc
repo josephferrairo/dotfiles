@@ -39,6 +39,7 @@ let NERDTreeShowHidden=1
 
 Plug 'https://github.com/vim-ruby/vim-ruby.git'
 Plug 'https://github.com/tpope/vim-haml.git'
+Plug 'https://github.com/stephpy/vim-yaml.git'
 Plug 'https://github.com/ervandew/supertab.git'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'https://github.com/tpope/vim-endwise.git'
@@ -86,6 +87,9 @@ set t_Co=256
 :hi cursorlinenr gui=underline cterm=underline
 " Can Copy and Paste from system clipboard
 set clipboard=unnamed
+" Comment with ctl + c and Uncomment with ctl + T
+map <C-C> :s:^:#<CR>
+map <C-T> :s:^#<CR>
 " ================ Indentation ======================
 
 set autoindent
