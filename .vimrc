@@ -9,22 +9,10 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/tpope/vim-rails.git'
 Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
 
-"Plug 'https://github.com/vim-syntastic/syntastic.git'
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
 
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
-"let g:syntastic_loc_list_height=5
-"
-Plug 'https://github.com/nathanaelkane/vim-indent-guides.git'
-Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plug 'ascenator/L9', {'name': 'newL9'}
 Plug 'https://github.com/vim-airline/vim-airline.git'
-Plug 'vim-airline/vim-airline-themes'
-set laststatus=2
+set laststatus=2 " Always Display vim-airline
+
 Plug 'https://github.com/kien/ctrlp.vim.git'
 Plug 'https://github.com/rking/ag.vim.git'
 Plug 'https://github.com/mhinz/vim-signify.git'
@@ -70,7 +58,7 @@ Plug 'https://github.com/morhetz/gruvbox.git'
 call plug#end()
 filetype plugin indent on    " required
 colorscheme gruvbox
-set background=dark" Setting dark mode
+set background=dark " Setting dark mode
 set t_Co=256
 " syntax on
 :syntax on
