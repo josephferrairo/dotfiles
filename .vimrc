@@ -78,6 +78,8 @@ set clipboard=unnamed
 " Comment with ctl + c and Uncomment with ctl + T
 map <C-C> :s:^:#<CR>
 map <C-T> :s:^#<CR>
+" Allow navigating in and out of :terminal
+:tnoremap <Esc> <C-\><C-n>
 " ================ Indentation ======================
 
 set autoindent
