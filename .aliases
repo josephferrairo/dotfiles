@@ -11,3 +11,5 @@ alias resquestart="bundle exec rake resque:work VERBOSE=1 QUEUE='*' --trace"
 alias ls='command ls -AG'
 
 alias vim='nvim'
+
+alias chrome='open -a "Google Chrome"'

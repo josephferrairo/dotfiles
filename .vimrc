@@ -98,6 +98,5 @@ filetype plugin on
 filetype indent on
 " default syntax is ruby
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
 "NeoVim true color on
  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
