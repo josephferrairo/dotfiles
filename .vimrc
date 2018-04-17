@@ -39,10 +39,31 @@ Plug 'https://github.com/kien/ctrlp.vim.git'
 Plug 'https://github.com/sheerun/vim-polyglot.git'
 Plug 'alvan/vim-closetag'
 
+" Autocomplete
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'fishbullet/deoplete-ruby'
+Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+let g:tern#command = ["tern"]
+let g:deoplete#sources#ternjs#case_insensitive = 0
+let g:deoplete#sources#ternjs#types = 1
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#ternjs#filetypes = [
+      \ 'jsx',
+      \ 'javascript.jsx',
+      \ 'vue',
+      \ 'html'
+      \ ]
+
+Plug 'autozimu/LanguageClient-neovim', {
+      \ 'branch': 'next',
+      \ 'do': 'bash install.sh',
+      \ }
+
 " vim-jsx stuff
 Plug 'https://github.com/mxw/vim-jsx.git'
 let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
+
 
 " JS Linting
 Plug 'https://github.com/w0rp/ale.git'
@@ -99,4 +120,4 @@ filetype indent on
 " default syntax is ruby
 " To ignore plugin indent changes, instead use:
 "NeoVim true color on
- let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1

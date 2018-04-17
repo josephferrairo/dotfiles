@@ -13,3 +13,5 @@ alias ls='command ls -AG'
 alias vim='nvim'
 
 alias chrome='open -a "Google Chrome"'
+
+alias vscode='open -a "Visual Studio Code"'
